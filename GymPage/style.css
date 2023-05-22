@@ -1,0 +1,1369 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Concert One', cursive; */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ----------------------------------- Header ------------------------------------- */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(118 0 0 / 70%), rgba(17 18 22 / 67%)), url('../img/gym1.jpg');
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 44px;
+    position: absolute;
+    left: 30px;
+    filter: invert(1);
+    rotate: 40deg;
+}
+
+nav #logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav #logo::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff3f50;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+nav #logo:hover::after {
+    width: 100%;
+}
+
+.navBar {
+    flex: 1;
+    text-align: right;
+}
+
+.navBar ul {
+    position: absolute;
+    left: 67%;
+    margin: -21px -106px;
+}
+
+.navBar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 16px;
+    position: relative;
+}
+
+.navBar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBar ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff3f50;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.navBar ul li:hover::after {
+    width: 100%;
+}
+
+.navBar ul #StyContact {
+    border: 1px solid #fff;
+
+}
+
+.navBar ul #StyContact a {
+    color: #fff;
+}
+
+.text-box {
+    width: 70%;
+    color: #fff;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.text-box h3 {
+    font-size: 50px;
+}
+
+.text-box p {
+    margin: 10px 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.text-box p::after {
+    content: '';
+    width: 16%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin: 10px 43%;
+}
+
+/* .text-box h3::after{
+    content: '';
+    width: 1px;
+    height: 190%;
+    background: #fff;
+    display: block;
+    margin: 0px 36%;
+    position: absolute;
+    left: -223px;
+    top: 44%;
+} */
+.btn {
+    position: absolute;
+    left: 43%;
+    margin: 2% auto;
+    padding: 10px 18px;
+    width: 16%;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 1px solid#ff3f50;
+    background: #f44336;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #fff;
+    background: transparent;
+    transition: 0.6s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(min-width: 1100px) and (max-width: 1199px) {
+
+    .navBar ul {
+        left: 63%;
+    }
+
+    .text-box {
+        top: 50%;
+        left: 52%;
+    }
+
+    .text-box h3 {
+        font-size: 35px;
+    }
+
+    .text-box p {
+        font-size: 13px;
+    }
+
+    .btn {
+        left: 42%;
+        width: 18%;
+    }
+} 
+
+@media(min-width: 1000px) and (max-width: 1099px) {
+
+    
+    nav img {
+        left: 24px;
+    }
+
+    .navBar ul {
+        left: 60%;
+    }
+
+    .text-box {
+        top: 48%;
+        left: 52%;
+    }
+
+    .text-box h3 {
+        font-size: 35px;
+    }
+
+    .text-box p {
+        font-size: 13px;
+    }
+
+    .btn {
+        left: 41%;
+        width: 20%;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 999px) {
+
+    
+    .navBar ul {
+        left: 63%;
+        top: 15%;
+        width: 80%;
+        height: 40%;
+    }
+
+    .navBar ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 10px;
+        position: relative;
+        margin-bottom: 10%;
+    }
+
+    .navBar {
+        position: fixed;
+        background: #202020;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        margin: 3px 22px;
+        position: relative;
+        left: 5%;
+        color: #fff;
+        cursor: pointer;
+        font-size: 35px;
+    }
+
+    nav img {
+        left: 12px;
+    }
+
+    .text-box {
+        top: 45%;
+        left: 52%;
+    }
+
+    .text-box h3 {
+        font-size: 35px;
+    }
+
+    .btn {
+        left: 38%;
+        width: 25%;
+    }
+
+    .navBar ul #StyContact {
+        margin-left: 10px;
+    }
+}
+@media(min-width: 800px) and (max-width: 899px) {
+
+    .header{
+        background-size: contain;
+    }
+    .navBar ul {
+        left: 63%;
+        top: 15%;
+        width: 80%;
+        height: 40%;
+    }
+
+    .navBar ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 10px;
+        position: relative;
+        margin-bottom: 10%;
+    }
+
+    .navBar {
+        position: fixed;
+        background: #202020;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        margin: 3px 22px;
+        position: relative;
+        left: 5%;
+        color: #fff;
+        cursor: pointer;
+        font-size: 35px;
+    }
+
+    nav img {
+        left: 12px;
+    }
+
+    .text-box {
+        top: 45%;
+        left: 52%;
+    }
+
+    .text-box h3 {
+        font-size: 35px;
+    }
+
+    .btn {
+        left: 38%;
+        width: 25%;
+    }
+
+    .navBar ul #StyContact {
+        margin-left: 10px;
+    }
+}
+
+/* --------------------------------------- About --------------------------------------- */
+
+.about-row {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/gym2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about-row .col {
+    height: 65%;
+    width: 33%;
+    position: absolute;
+    top: 118%;
+    left: 60%;
+    padding: 4% 20px;
+}
+
+.col h3 {
+    font-size: 42px;
+    color: #fff;
+}
+
+.col h4 {
+    font-size: 28px;
+    color: #f44336;
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+
+.col p {
+    color: #fff;
+    font-size: 17px;
+}
+
+@media(min-width: 1000px) and (max-width: 1099px) {
+
+    .col h3 {
+        font-size: 35px;
+    }
+
+    .col h4 {
+        font-size: 24px;
+    }
+    .col p {
+        font-size: 16px;
+    }
+
+    .about-row .col {
+        top: 112%;
+    }
+}
+
+@media(min-width: 800px) and (max-width: 999px) {
+
+    .col h3 {
+        font-size: 35px;
+    }
+
+    .col h4 {
+        font-size: 20px;
+    }
+
+    .col p {
+        font-size: 13px;
+    }
+
+    .about-row .col {
+        top: 120%;
+    }
+}
+
+/* ------------------------------------------- Trainers --------------------------------------------- */
+.main-trainer {
+    height: 120vh;
+    background-image: linear-gradient(rgba(24 23 23 / 58%), rgba(17 18 22 / 70%)), url('../img/blackScreen.png');
+    background-position: center;
+    position: relative;
+    text-align: center;
+
+}
+
+.main-trainer h3 {
+    color: #fff;
+    font-size: 42px;
+    padding-top: 4%;
+}
+
+.trainer-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3% 5%;
+
+}
+
+.trainer-col {
+    flex-basis: 16%;
+    border-radius: 10px;
+    margin: 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.trainer-col:hover {
+    box-shadow: 0 0 18px 0 #fff;
+}
+
+.trainer-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer1 {
+    width: 50%;
+    color: #f44336;
+    font-size: 25px;
+    position: absolute;
+    top: 65%;
+    left: -2%;
+
+}
+
+.layer2 {
+    width: 20%;
+    color: #f44336;
+    font-size: 25px;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+}
+
+.layer3 {
+    width: 20%;
+    color: #f44336;
+    font-size: 25px;
+    position: absolute;
+    top: 65%;
+    left: 66%;
+}
+
+.layer1::after {
+    content: '';
+    width: 26%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: 37%;
+    margin: 10px 0%;
+}
+
+.layer2::after {
+    content: '';
+    width: 58%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: 21%;
+    margin: 10px 0%;
+}
+
+.layer3::after {
+    content: '';
+    width: 56%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: 23%;
+    margin: 10px 0%;
+}
+
+.main-trainer .Routine {
+    height: 10%;
+    width: 74%;
+    position: absolute;
+    left: 13%;
+    top: 82%;
+    border: 1px solid #fff;
+}
+
+.srow .time1 {
+    position: absolute;
+    top: 82%;
+    left: 14%;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.srow .time2 {
+    position: absolute;
+    top: 90%;
+    left: 14%;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.srow .phno {
+    position: absolute;
+    top: 82%;
+    left: 63%;
+    color: #f44336;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+
+.srow .email {
+    position: absolute;
+    top: 90%;
+    left: 63%;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.srow .mssg {
+    position: absolute;
+    top: 90%;
+    left: 59%;
+    width: 2%;
+    filter: invert(1);
+}
+
+.srow .call {
+    position: absolute;
+    top: 82%;
+    left: 59%;
+    width: 2%;
+    filter: invert(1);
+}
+
+@media(min-width: 1100px) and (max-width: 1199px) {
+
+    .layer1,
+    .layer2,
+    .layer3 {
+        top: 61%;
+    }
+
+    .layer3 {
+        left: 67%;
+    }
+
+    .srow .time1,
+    .time2,
+    .phno,
+    .email {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1099px) {
+
+    .main-trainer h3 {
+        font-size: 35px;
+    }
+
+    .layer1,
+    .layer2,
+    .layer3 {
+        top: 54%;
+    }
+
+    .layer3 {
+        left: 67%;
+    }
+
+    .srow .time1 {
+        font-size: 17px;
+        top: 75%;
+    }
+
+    .srow .phno {
+        font-size: 17px;
+        top: 75%;
+    }
+
+    .srow .time2 {
+        font-size: 17px;
+        top: 85%;
+    }
+
+    .srow .email {
+        font-size: 17px;
+        top: 85%;
+    }
+
+    .srow .call {
+        top: 75%;
+    }
+
+    .srow .mssg {
+        top: 85%;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 999px) {
+
+    .main-trainer h3 {
+        font-size: 35px;
+    }
+
+    .layer1,
+    .layer2,
+    .layer3 {
+        top: 50%;
+    }
+
+    .layer3 {
+        left: 67%;
+    }
+
+    .srow .time1 {
+        font-size: 16px;
+        top: 70%;
+    }
+
+    .srow .phno {
+        font-size: 16px;
+        top: 70%;
+    }
+
+    .srow .time2 {
+        font-size: 16px;
+        top: 80%;
+    }
+
+    .srow .email {
+        font-size: 16px;
+        top: 80%;
+    }
+
+    .srow .call {
+        top: 70%;
+    }
+
+    .srow .mssg {
+        top: 80%;
+    }
+}
+
+@media(min-width: 800px) and (max-width: 899px) {
+
+    .main-trainer h3 {
+        font-size: 35px;
+    }
+
+    .layer1,
+    .layer2,
+    .layer3 {
+        top: 48%;
+    }
+
+    .layer3 {
+        left: 67%;
+    }
+
+    .srow .time1 {
+        font-size: 14px;
+        left: 13%;
+        top: 65%;
+    }
+
+    .srow .phno {
+        font-size: 14px;
+        top: 65%;
+    }
+
+    .srow .time2 {
+        font-size: 14px;
+        left: 13%;
+        top: 75%;
+    }
+
+    .srow .email {
+        font-size: 14px;
+        top: 75%;
+    }
+
+    .srow .call {
+        top: 65%;
+    }
+
+    .srow .mssg {
+        top: 75%;
+    }
+}
+
+/* ----------------------------------------- Packages --------------------------------------------- */
+
+.main-package {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(rgba(17 18 22 / 70%), rgba(17 18 22 / 70%)), url('../img/blackScreen.png');
+    background-position: center;
+
+}
+
+.main-package h3 {
+    color: #fff;
+    font-size: 42px;
+    padding-top: 4%;
+}
+
+.package-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3% 5%;
+
+}
+
+.package-col {
+    height: 325px;
+    background: linear-gradient(rgba(255 51 51), rgba(127 139 189 / 70%));
+    flex-basis: 24%;
+    border-radius: 10px;
+    margin-top: 73px;
+    position: relative;
+    overflow: hidden;
+}
+
+.package-col:hover {
+    box-shadow: 0 0 18px 0 #fff;
+}
+
+.package-row .btn {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 75%;
+    margin: 2% auto;
+    padding: 10px 18px;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background: #ebdedec5;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.package-row .btn:hover {
+    background-color: #fff;
+}
+
+.package-col .package-col2 strong {
+    position: absolute;
+    top: 10%;
+    left: 32%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.basicP {
+    position: absolute;
+    left: 18%;
+    top: 26%;
+    color: #ef7171;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+.premiumP {
+    position: absolute;
+    left: 43%;
+    top: 26%;
+    color: #ef7171;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.exclusiveP {
+    position: absolute;
+    left: 70%;
+    top: 26%;
+    color: #ef7171;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.main-package .headP {
+    position: absolute;
+    top: 18%;
+    left: 38%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.package-col .package-col2 .pac1{
+    position: absolute;
+    left: 55%;
+    top: 0%;
+    
+}
+.package-col .package-col2 .pac2{
+    position: absolute;
+    left: 57%;
+    top: 0%;
+}
+.package-col .package-col2 .pac3{
+    position: absolute;
+    left: 28%;
+    top: 0%;
+}
+
+@media(min-width: 1100px) and (max-width: 1199px) {
+
+    .package-col {
+        flex-basis: 26%;
+    }
+
+    .package-col .package-col2 strong {
+        font-size: 30px;
+        left: 32%;
+    }
+
+    .basicP {
+        left: 17%;
+    }
+
+    .premiumP {
+        left: 43%;
+    }
+
+    .main-package h3 {
+        font-size: 37px;
+    }
+
+    .main-package .headP {
+        left: 35%;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1099px) {
+
+    .package-col {
+        flex-basis: 28%;
+    }
+
+    .package-col .package-col2 strong {
+        font-size: 28px;
+        left: 33%;
+    }
+
+    .basicP {
+        top: 25%;
+        left: 17%;
+        font-size: 25px;
+    }
+
+    .premiumP {
+        top: 25%;
+        left: 43%;
+        font-size: 25px;
+    }
+
+    .exclusiveP {
+        top: 25%;
+        left: 70%;
+        font-size: 25px;
+    }
+
+    .main-package h3 {
+        font-size: 35px;
+    }
+
+    .main-package .headP {
+        left: 32%;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 999px) {
+
+    .main-package{
+        height: 95vh;
+    }
+    .package-col {
+        flex-basis: 30%;
+    }
+
+    .package-col .package-col2 strong {
+        font-size: 30px;
+        left: 32%;
+    }
+
+    .basicP {
+        top: 25%;
+        left: 16%;
+        font-size: 25px;
+    }
+
+    .premiumP {
+        top: 25%;
+        left: 43%;
+        font-size: 25px;
+    }
+
+    .exclusiveP {
+        top: 25%;
+        left: 70%;
+        font-size: 25px;
+    }
+
+    .main-package h3 {
+        font-size: 35px;
+    }
+
+    .main-package .headP {
+        top: 16%;
+        left: 32%;
+        font-size: 17px;
+    }
+    .package-col .package-col2 a {
+        width: 52%;
+    }
+}
+@media(min-width: 800px) and (max-width: 899px) {
+
+    .main-package{
+        height: 94vh;
+    }
+    .package-col {
+        flex-basis: 30%;
+    }
+
+    .package-col .package-col2 strong {
+        font-size: 28px;
+        left: 32%;
+    }
+
+    .basicP {
+        top: 25%;
+        left: 15%;
+        font-size: 25px;
+    }
+
+    .premiumP {
+        top: 25%;
+        left: 41%;
+        font-size: 25px;
+    }
+
+    .exclusiveP {
+        top: 25%;
+        left: 69%;
+        font-size: 25px;
+    }
+
+    .main-package h3 {
+        font-size: 35px;
+    }
+
+    .main-package .headP {
+        top: 16%;
+        left: 32%;
+        font-size: 17px;
+    }
+    .package-col .package-col2 a {
+        width: 55%;
+    }
+}
+
+/* ------------------------------------ Testimonial ------------------------------------ */
+
+#testimonials {
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    background-image: linear-gradient(rgba(28 26 26 / 52%), rgba(122 55 55 / 65%)), url('../img/blackScreen.png');
+}
+
+.testimonial-row {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testimonial-col {
+    flex-basis: 36%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #f7d4d4;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonial-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p {
+    padding: 0;
+}
+
+.testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa {
+    color: #f44336;
+}
+
+@media(min-width: 800px) and (max-width: 999px) {
+
+    .testimonial-col {
+        flex-basis: 44%;
+    }
+}
+
+/* ----------------------------------- Contact ------------------------------------- */
+
+.contact-us {
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    background-blend-mode: inherit;
+    background-image: linear-gradient(rgba(122 55 55 / 60%), rgba(17 18 22 / 70%)), url('../img/gymGirl.jpg');
+    background-size: cover;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-row h2 {
+    position: absolute;
+    top: 499%;
+    left: 9%;
+    font-size: 35px;
+    color: #fff;
+}
+
+.contact-col {
+    flex-basis: 40%;
+    margin-bottom: 30px;
+    margin-right: 42%;
+    padding-top: 8%;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+}
+
+.contact-col .btn {
+    position: absolute;
+    left: 9%;
+    top: 550%;
+    margin: 2% auto;
+    padding: 10px 18px;
+    width: 16%;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 1px solid#ff3f50;
+    background: #f44336;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-col .btn:hover {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+
+@media(min-width: 1100px) and (max-width: 1199px) {
+    .contact-row h2 {
+        top: 498%;
+    }
+
+    .contact-col .btn {
+        width: 18%;
+        top: 552%;
+    }
+    .contact-col {
+        padding-top: 9%;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1099px) {
+
+    .contact-row h2 {
+        top: 505%;
+    }
+
+    .contact-col .btn {
+        width: 19%;
+        top: 558%;
+    }
+    .contact-col {
+        padding-top: 12%;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 999px) {
+
+    .contact-row h2 {
+        top: 498%;
+    }
+
+    .contact-col {
+        padding-top: 14%;
+    }
+
+    .contact-col .btn {
+        width: 22%;
+        top: 550%;
+    }
+}
+@media(min-width: 800px) and (max-width: 899px) {
+
+    .contact-row h2 {
+        top: 498%;
+    }
+
+    .contact-col {
+        padding-top: 14%;
+    }
+
+    .contact-col .btn {
+        width: 24%;
+        top: 550%;
+    }
+}
+
+/* --------------------------------------------- Footer ------------------------------------------- */
+
+.footer {
+    position: relative;
+    height: 40vh;
+    background-color: #e10f00c7;
+}
+
+.most-left {
+    position: absolute;
+    top: 13%;
+    left: 9%;
+    width: 20%;
+    height: 60%;
+    color: #fdf9f9b8;
+}
+
+.most-left img {
+    width: 42px;
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    filter: invert(1);
+    rotate: 40deg;
+}
+
+.most-left #logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 14%;
+    left: 18%;
+}
+
+.center-section {
+    width: 30%;
+    height: 72%;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    display: flex;
+}
+
+.center-section .about-gym {
+    width: 42%;
+    position: absolute;
+    left: 55%;
+}
+
+.most-right {
+    width: 20%;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    text-align: left;
+
+}
+
+.most-right .icons {
+    color: #fff;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 13px 0;
+    position: absolute;
+    top: 355%;
+    left: -8%;
+}
+
+.most-right .icons .fa {
+    padding: 10px;
+}
+
+.center-section .links .about{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+}
+.center-section .links .trainer{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 23%;
+}
+.center-section .links .member{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 46%;
+}
+.center-section .links .contact{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 70%;
+}
+
+@media(min-width: 1000px) and (max-width: 1199px) {
+
+    .center-section .about-gym {
+        width: 53%;
+        left: 65%;
+    }
+    .most-left img {
+        left: -2%;
+        top: 11%;
+    }
+}
+
+@media(min-width: 800px) and (max-width: 999px) {
+
+    .center-section {
+        font-size: 15px;
+    }
+    .center-section .links .about{
+        font-size: 18px;
+    }
+    .center-section .links .trainer{
+        font-size: 18px;
+    }
+    .center-section .links .member{
+        font-size: 18px;
+    }
+    .center-section .links .contact{
+        font-size: 18px;
+    }
+    .center-section .about-gym {
+        width: 59%;
+        left: 62%;
+    }
+    .most-left img {
+        left: -4%;
+        top: 8%;
+    }
+    .most-left #logo {
+        font-size: 22px;
+    }
+    .most-right{
+        font-size: 15px;
+    }
+}
